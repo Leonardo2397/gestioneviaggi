@@ -5,11 +5,10 @@ import org.springframework.data.jpa.repository.JpaRepository;
 
 import java.time.LocalDate;
 import java.util.List;
-import java.util.Locale;
 
 public interface ViaggioRepository extends JpaRepository<Viaggio, Long> {
 
     List<Viaggio> findByDate(LocalDate date);
 
-    List<Viaggio> findByState(String state);
+    List<Viaggio> findByStato(String stato);
 }

@@ -1,5 +1,6 @@
 package leonardoferrante.gestioneviaggi.payload;
 
+import com.fasterxml.jackson.annotation.JsonFormat;
 import jakarta.validation.constraints.Future;
 import jakarta.validation.constraints.NotBlank;
 import lombok.Data;
@@ -13,6 +14,7 @@ public class NewViaggioPayload {
     private String destination;
 
     @Future//per data futura
+    @JsonFormat(pattern = "yyyy-MM-dd")
     private LocalDate date;
 
     private String stato;
