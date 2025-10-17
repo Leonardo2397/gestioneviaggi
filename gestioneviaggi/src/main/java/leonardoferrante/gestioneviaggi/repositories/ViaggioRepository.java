@@ -7,7 +7,7 @@ import java.time.LocalDate;
 import java.util.List;
 import java.util.Locale;
 
-public interface ViaggioRepository extends JpaRepository {
+public interface ViaggioRepository extends JpaRepository<Viaggio, Long> {
 
     List<Viaggio> findByDate(LocalDate date);
 
