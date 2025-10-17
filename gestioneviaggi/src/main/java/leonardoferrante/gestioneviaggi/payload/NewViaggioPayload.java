@@ -13,7 +13,7 @@ public class NewViaggioPayload {
     @NotBlank
     private String destination;
 
-    @Future//per data futura
+    //@Future//per data futura
     @JsonFormat(pattern = "yyyy-MM-dd")
     private LocalDate date;
 
